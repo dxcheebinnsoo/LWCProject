@@ -1,10 +1,11 @@
-import { LightningElement, track, api } from 'lwc';
+import { LightningElement,track,api } from 'lwc';
 
 export default class ChildComp extends LightningElement {
-    @track message;
+  @track message;
 
-    @api
-    changeMessage(strString){
-        this.message=strString.toUpperCase();
-    }
+  @api
+  changeMessage(strString)
+  {
+      this.message=strString.toUpperCase();
+  }
 }
