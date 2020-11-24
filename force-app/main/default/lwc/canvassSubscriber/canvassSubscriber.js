@@ -19,7 +19,8 @@ export default class CanvasSubscriber extends LightningElement {
        console.log("Color -->"+colorCode);
        this.color=colorCode;
    }
-    get colorStyle(){
+    get colorStyle()
+    {
         return `background-color:${this.color}`;
     }
 }
